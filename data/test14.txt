@@ -1,0 +1,207 @@
+
+(base) C:\Windows\system32>cd/
+
+(base) C:\>cd wamp/www/tensorflow_chatbot
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py*
+python: can't open file 'execute.py*': [Errno 22] Invalid argument
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-14 09:30:30.724145: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:30:30.744092: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:30:30.749420: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:30:30.753714: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:30:30.759451: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:30:30.764065: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-13200
+> you are ok today?
+Yes .
+> great to hear it from you
+_UNK
+> you didnt understand
+_UNK
+> u happy?
+Yes .
+> what you know about me?
+I don ' t know .
+> do you have eyes?
+Yes .
+> do you have legs?
+Yeah .
+> how many legs do you have?
+I don ' t know .
+> you dont have it
+_UNK
+> do you like me?
+I ' m sorry .
+> why?
+I ' m sorry .
+> why?
+I ' m sorry .
+> stop it
+I ' m sorry .
+> sop
+_UNK
+> .....
+. . .
+> !!!!
+_UNK !
+> you need much training
+I ' m sorry .
+> you sounds so good
+I ' m sorry .
+>
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-14 09:36:22.845985: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:36:22.850509: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:36:22.854803: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:36:22.860112: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:36:22.864535: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:36:22.868932: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-10800
+> hey
+
+> do you like me?
+I ' m not .
+> you dont have it
+I ' m not .
+> how many legs do you have?
+I ' m not .
+> do you have legs?
+No .
+> do you have eyes?
+I ' m not .
+> u happy?
+Yes .
+> great to hear it from you
+What ?
+> you are ok today?
+I ' m not .
+> you didnt understand
+I ' m not .
+> do you have eyes?
+I ' m not .
+> !!!!
+I ' m sorry .
+> you sounds so good
+I ' m not sure .
+> you didnt understand
+I ' m not .
+> !!!!
+I ' m sorry .
+> ??
+Yeah .
+> ..
+What ?
+> forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF96D6594C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-14 09:47:15.497865: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:47:15.505382: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:47:15.510955: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:47:15.516817: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:47:15.525824: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:47:15.532602: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-6300
+> i know you are sick
+I ' m sure I ' m not sure .
+> what?
+I ' m sure .
+> ok then
+I ' m sure .
+> you crazy
+I ' m sure I ' m sure .
+> answer me
+I ' m sure you ' re not going to
+> your answer?
+Yeah .
+> how are you?
+I ' m fine .
+> what are you doing
+I ' m sure I ' m sure I '
+> tell me a joke
+I ' m sure .
+> how do you spend your day?
+I ' m fine .
+> how was your day
+I ' m sure .
+> do you have legs
+I ' m sure I ' m sure .
+> do you have legs
+I ' m sure I ' m sure .
+> who is your girlfriend?
+I ' m sure .
+> can we go out?
+I ' m sure .
+> forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF96D8694C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-14 09:53:11.278799: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:53:11.287767: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:53:11.294709: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:53:11.303886: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:53:11.314719: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-14 09:53:11.322650: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-13200
+> hey
+
+> how are you?
+I ' m sorry .
+> can we go out?
+I ' m sorry .
+> who is your girlfriend?
+I ' m sorry .
+> do you have legs
+I ' m sorry .
+> how was your day
+_UNK .
+> how do you spend your day?
+I don ' t know .
+> tell me a joke
+What ?
+> what are you doing
+I ' m sorry .
+> how are you?
+I ' m sorry .
+> how are you?
+I ' m sorry .
+> how are you?
+I ' m sorry .
+> how are you?
+I ' m sorry .
+> how are you?
+I ' m sorry .
+>
+(base) C:\wamp\www\tensorflow_chatbot>
+
+(base) C:\wamp\www\tensorflow_chatbot>

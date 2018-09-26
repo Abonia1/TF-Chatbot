@@ -1,0 +1,760 @@
+
+(base) C:\Windows\system32>cd./
+
+(base) C:\Windows\system32>cd  wamp/www/tensorflow_chatbot
+The system cannot find the path specified.
+
+(base) C:\Windows\system32>cd  wamp/www/tensorflow_chatbot
+The system cannot find the path specified.
+
+(base) C:\Windows\system32>cd/
+
+(base) C:\>cd  wamp/www/tensorflow_chatbot
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 89
+    print '\n>> written %d lines' %(i)
+                                ^
+SyntaxError: invalid syntax
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 89
+    print '\n>> written %d lines' %(i)
+                                ^
+SyntaxError: invalid syntax
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 89
+    print '\n>> written %d lines'%(i)
+                                ^
+SyntaxError: invalid syntax
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 89
+    print '\n>> written %d line' %i
+                               ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(print '\n>> written %d line' %i)?
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 89
+    print ()'\n>> written %d line' %i)
+                                 ^
+SyntaxError: invalid syntax
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 89
+    print ()'\n>> written %d line %i')
+                                    ^
+SyntaxError: invalid syntax
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 103
+    print '>> gathered id2line dictionary.\n'
+                                            ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('>> gathered id2line dictionary.\n')?
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 103
+    print '>> gathered id2line dictionary.\n'
+                                            ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('>> gathered id2line dictionary.\n')?
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 105
+    print '>> gathered conversations.\n'
+                                       ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('>> gathered conversations.\n')?
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+  File "data/prepare_data.py", line 107
+    print questions[:2]
+                  ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(questions[:2])?
+
+(base) C:\wamp\www\tensorflow_chatbot>python data/prepare_data.py
+Traceback (most recent call last):
+  File "data/prepare_data.py", line 102, in <module>
+    id2line = get_id2line()
+  File "data/prepare_data.py", line 8, in get_id2line
+    lines=open('movie_lines.txt').read().split('\n')
+FileNotFoundError: [Errno 2] No such file or directory: 'movie_lines.txt'
+
+(base) C:\wamp\www\tensorflow_chatbot>cd data
+
+(base) C:\wamp\www\tensorflow_chatbot\data>py^Thon prepare_data.py
+'pyhon' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\wamp\www\tensorflow_chatbot\data>python prepare_data.py
+>> gathered id2line dictionary.
+
+>> gathered conversations.
+
+['Can we make this quick?  Roxanne Korrine and Andrew Barrett are having an incredibly horrendous public break- up on the quad.  Again.', 'Not the hacking and gagging and spitting part.  Please.']
+>> gathered questions and answers.
+
+>> written 0 line
+>> written 10000 line
+>> written 20000 line
+>> written 30000 line
+>> written 40000 line
+>> written 50000 line
+>> written 60000 line
+>> written 70000 line
+>> written 80000 line
+>> written 90000 line
+>> written 100000 line
+>> written 110000 line
+>> written 120000 line
+>> written 130000 line
+
+(base) C:\wamp\www\tensorflow_chatbot\data>cd..
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : train
+
+Preparing data in working_dir/
+Tokenizing data in data/train.enc
+  tokenizing line 100000
+Tokenizing data in data/train.dec
+  tokenizing line 100000
+Tokenizing data in data/test.enc
+2018-09-13 09:45:46.902302: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:45:46.909764: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:45:46.918268: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:45:46.928857: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:45:46.935786: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:45:46.941376: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+Creating 1 layers of 128 units.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-3000
+2018-09-13 09:49:01.146098: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/gru_cell/gates/bias not found in checkpoint
+2018-09-13 09:49:01.146095: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/gru_cell/candidate/bias not found in checkpoint
+2018-09-13 09:49:01.146095: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/gru_cell/candidate/kernel not found in checkpoint
+2018-09-13 09:49:01.159584: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/gru_cell/gates/kernel not found in checkpoint
+2018-09-13 09:49:01.190759: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/rnn/embedding_wrapper/gru_cell/candidate/bias not found in checkpoint
+2018-09-13 09:49:01.200519: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/rnn/embedding_wrapper/gru_cell/candidate/kernel not found in checkpoint
+2018-09-13 09:49:01.213011: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/rnn/embedding_wrapper/gru_cell/gates/bias not found in checkpoint
+2018-09-13 09:49:01.224851: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\framework\op_kernel.cc:1158] Not found: Key embedding_attention_seq2seq/rnn/embedding_wrapper/gru_cell/gates/kernel not found in checkpoint
+Traceback (most recent call last):
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\client\session.py", line 1139, in _do_call
+    return fn(*args)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\client\session.py", line 1121, in _run_fn
+    status, run_metadata)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\contextlib.py", line 88, in __exit__
+    next(self.gen)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\framework\errors_impl.py", line 466, in raise_exception_on_not_ok_status
+    pywrap_tensorflow.TF_GetCode(status))
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires shapes of both tensors to match. lhs shape= [128] rhs shape= [256]
+         [[Node: save/Assign_2 = Assign[T=DT_FLOAT, _class=["loc:@embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Attention_0/bias"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/cpu:0"](embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Attention_0/bias, save/RestoreV2_2)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "execute.py", line 319, in <module>
+    train()
+  File "execute.py", line 137, in train
+    model = create_model(sess, False)
+  File "execute.py", line 117, in create_model
+    model.saver.restore(session, ckpt.model_checkpoint_path)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\training\saver.py", line 1548, in restore
+    {self.saver_def.filename_tensor_name: save_path})
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\client\session.py", line 789, in run
+    run_metadata_ptr)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\client\session.py", line 997, in _run
+    feed_dict_string, options, run_metadata)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\client\session.py", line 1132, in _do_run
+    target_list, options, run_metadata)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\client\session.py", line 1152, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Assign requires shapes of both tensors to match. lhs shape= [128] rhs shape= [256]
+         [[Node: save/Assign_2 = Assign[T=DT_FLOAT, _class=["loc:@embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Attention_0/bias"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/cpu:0"](embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Attention_0/bias, save/RestoreV2_2)]]
+
+Caused by op 'save/Assign_2', defined at:
+  File "execute.py", line 319, in <module>
+    train()
+  File "execute.py", line 137, in train
+    model = create_model(sess, False)
+  File "execute.py", line 104, in create_model
+    model = seq2seq_model.Seq2SeqModel( gConfig['enc_vocab_size'], gConfig['dec_vocab_size'], _buckets, gConfig['layer_size'], gConfig['num_layers'], gConfig['max_gradient_norm'], gConfig['batch_size'], gConfig['learning_rate'], gConfig['learning_rate_decay_factor'], forward_only=forward_only)
+  File "C:\wamp\www\tensorflow_chatbot\seq2seq_model.py", line 393, in __init__
+    self.saver = tf.train.Saver(tf.global_variables())
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\training\saver.py", line 1139, in __init__
+    self.build()
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\training\saver.py", line 1170, in build
+    restore_sequentially=self._restore_sequentially)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\training\saver.py", line 691, in build
+    restore_sequentially, reshape)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\training\saver.py", line 419, in _AddRestoreOps
+    assign_ops.append(saveable.restore(tensors, shapes))
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\training\saver.py", line 155, in restore
+    self.op.get_shape().is_fully_defined())
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\ops\state_ops.py", line 271, in assign
+    validate_shape=validate_shape)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\ops\gen_state_ops.py", line 45, in assign
+    use_locking=use_locking, name=name)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 767, in apply_op
+    op_def=op_def)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\framework\ops.py", line 2506, in create_op
+    original_op=self._default_original_op, op_def=op_def)
+  File "C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\framework\ops.py", line 1269, in __init__
+    self._traceback = _extract_stack()
+
+InvalidArgumentError (see above for traceback): Assign requires shapes of both tensors to match. lhs shape= [128] rhs shape= [256]
+         [[Node: save/Assign_2 = Assign[T=DT_FLOAT, _class=["loc:@embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Attention_0/bias"], use_locking=true, validate_shape=true, _device="/job:localhost/replica:0/task:0/cpu:0"](embedding_attention_seq2seq/embedding_attention_decoder/attention_decoder/Attention_0/bias, save/RestoreV2_2)]]
+
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : train
+
+Preparing data in working_dir/
+2018-09-13 09:59:49.312725: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:59:49.318708: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:59:49.329618: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:59:49.337478: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:59:49.349274: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 09:59:49.357040: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+Creating 1 layers of 128 units.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Created model with fresh parameters.
+WARNING:tensorflow:From C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\tensorflow\python\util\tf_should_use.py:170: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Reading development and training data (limit: 0).
+  reading data line 100000
+global step 300 learning rate 0.5000 step-time 1.33 perplexity 326.77
+  eval: bucket 0 perplexity 71.86
+  eval: bucket 1 perplexity 171.78
+  eval: bucket 2 perplexity 189.55
+  eval: bucket 3 perplexity 238.69
+global step 600 learning rate 0.5000 step-time 1.34 perplexity 78.54
+  eval: bucket 0 perplexity 122.33
+  eval: bucket 1 perplexity 186.99
+  eval: bucket 2 perplexity 250.86
+  eval: bucket 3 perplexity 248.75
+global step 900 learning rate 0.5000 step-time 1.24 perplexity 51.96
+  eval: bucket 0 perplexity 182.17
+  eval: bucket 1 perplexity 359.45
+  eval: bucket 2 perplexity 297.53
+  eval: bucket 3 perplexity 342.27
+global step 1200 learning rate 0.5000 step-time 1.21 perplexity 43.01
+  eval: bucket 0 perplexity 181.22
+  eval: bucket 1 perplexity 312.03
+  eval: bucket 2 perplexity 282.84
+  eval: bucket 3 perplexity 328.77
+global step 1500 learning rate 0.5000 step-time 1.27 perplexity 39.03
+  eval: bucket 0 perplexity 205.62
+  eval: bucket 1 perplexity 341.76
+  eval: bucket 2 perplexity 359.87
+  eval: bucket 3 perplexity 447.41
+global step 1800 learning rate 0.5000 step-time 1.26 perplexity 33.96
+  eval: bucket 0 perplexity 412.18
+  eval: bucket 1 perplexity 568.95
+  eval: bucket 2 perplexity 465.26
+  eval: bucket 3 perplexity 418.01
+global step 2100 learning rate 0.5000 step-time 1.28 perplexity 32.75
+  eval: bucket 0 perplexity 320.82
+  eval: bucket 1 perplexity 509.05
+  eval: bucket 2 perplexity 463.36
+  eval: bucket 3 perplexity 516.17
+global step 2400 learning rate 0.5000 step-time 1.27 perplexity 29.99
+  eval: bucket 0 perplexity 382.28
+  eval: bucket 1 perplexity 561.85
+  eval: bucket 2 perplexity 533.60
+  eval: bucket 3 perplexity 647.63
+global step 2700 learning rate 0.5000 step-time 1.43 perplexity 28.78
+  eval: bucket 0 perplexity 293.14
+  eval: bucket 1 perplexity 626.64
+  eval: bucket 2 perplexity 490.78
+  eval: bucket 3 perplexity 514.07
+global step 3000 learning rate 0.5000 step-time 1.38 perplexity 27.73
+  eval: bucket 0 perplexity 414.19
+  eval: bucket 1 perplexity 653.22
+  eval: bucket 2 perplexity 558.19
+  eval: bucket 3 perplexity 611.12
+global step 3300 learning rate 0.5000 step-time 1.40 perplexity 26.33
+  eval: bucket 0 perplexity 440.69
+  eval: bucket 1 perplexity 511.04
+  eval: bucket 2 perplexity 706.23
+  eval: bucket 3 perplexity 758.36
+global step 3600 learning rate 0.5000 step-time 1.19 perplexity 24.53
+  eval: bucket 0 perplexity 380.88
+  eval: bucket 1 perplexity 800.70
+  eval: bucket 2 perplexity 709.11
+  eval: bucket 3 perplexity 755.35
+global step 3900 learning rate 0.5000 step-time 1.33 perplexity 24.66
+  eval: bucket 0 perplexity 354.34
+  eval: bucket 1 perplexity 613.93
+  eval: bucket 2 perplexity 792.94
+  eval: bucket 3 perplexity 763.19
+global step 4200 learning rate 0.5000 step-time 1.33 perplexity 23.88
+  eval: bucket 0 perplexity 503.45
+  eval: bucket 1 perplexity 860.91
+  eval: bucket 2 perplexity 642.46
+  eval: bucket 3 perplexity 727.51
+global step 4500 learning rate 0.5000 step-time 1.40 perplexity 23.56
+  eval: bucket 0 perplexity 381.27
+  eval: bucket 1 perplexity 790.53
+  eval: bucket 2 perplexity 756.87
+  eval: bucket 3 perplexity 902.57
+global step 4800 learning rate 0.5000 step-time 1.16 perplexity 22.66
+  eval: bucket 0 perplexity 363.57
+  eval: bucket 1 perplexity 622.23
+  eval: bucket 2 perplexity 610.79
+  eval: bucket 3 perplexity 706.82
+global step 5100 learning rate 0.5000 step-time 1.25 perplexity 22.29
+  eval: bucket 0 perplexity 275.87
+  eval: bucket 1 perplexity 857.94
+  eval: bucket 2 perplexity 745.60
+  eval: bucket 3 perplexity 791.18
+global step 5400 learning rate 0.5000 step-time 1.21 perplexity 22.01
+  eval: bucket 0 perplexity 384.99
+  eval: bucket 1 perplexity 700.28
+  eval: bucket 2 perplexity 757.39
+  eval: bucket 3 perplexity 961.82
+global step 5700 learning rate 0.5000 step-time 1.27 perplexity 21.48
+  eval: bucket 0 perplexity 582.45
+  eval: bucket 1 perplexity 913.99
+  eval: bucket 2 perplexity 932.36
+  eval: bucket 3 perplexity 1020.17
+global step 6000 learning rate 0.5000 step-time 1.16 perplexity 20.90
+  eval: bucket 0 perplexity 585.68
+  eval: bucket 1 perplexity 815.38
+  eval: bucket 2 perplexity 967.52
+  eval: bucket 3 perplexity 999.97
+global step 6300 learning rate 0.5000 step-time 1.25 perplexity 20.78
+  eval: bucket 0 perplexity 341.98
+  eval: bucket 1 perplexity 1407.89
+  eval: bucket 2 perplexity 947.23
+  eval: bucket 3 perplexity 992.87
+global step 6600 learning rate 0.5000 step-time 1.03 perplexity 20.12
+  eval: bucket 0 perplexity 534.69
+  eval: bucket 1 perplexity 1216.32
+  eval: bucket 2 perplexity 774.97
+  eval: bucket 3 perplexity 879.67
+global step 6900 learning rate 0.5000 step-time 1.27 perplexity 20.19
+  eval: bucket 0 perplexity 591.25
+  eval: bucket 1 perplexity 787.63
+  eval: bucket 2 perplexity 1109.33
+  eval: bucket 3 perplexity 969.11
+global step 7200 learning rate 0.5000 step-time 1.20 perplexity 19.78
+  eval: bucket 0 perplexity 605.31
+  eval: bucket 1 perplexity 1085.00
+  eval: bucket 2 perplexity 916.42
+  eval: bucket 3 perplexity 1072.57
+global step 7500 learning rate 0.5000 step-time 1.27 perplexity 19.29
+  eval: bucket 0 perplexity 387.27
+  eval: bucket 1 perplexity 958.97
+  eval: bucket 2 perplexity 977.25
+  eval: bucket 3 perplexity 1058.41
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9699B94C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-13 13:25:37.158658: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:25:37.165051: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:25:37.171602: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:25:37.177175: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:25:37.183473: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:25:37.195082: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-7500
+>
+
+> hi
+
+> gyhg
+_UNK .
+> what?
+I ' m going to see you .
+> talk to me
+I ' m going to see you .
+> shit
+
+> stop
+
+> do you like me?
+I ' m not sure .
+> whats the name of the movie
+_UNK .
+> ?
+I ' m going to see you .
+> why
+
+> when
+
+> look here
+I ' m going to see you .
+> Have fun tonight?*
+No .
+> Who is she?
+_UNK .
+> What about him?
+He ' s a _UNK .
+> do yo have legs?
+No .
+> where are you from
+I ' m going to see you .
+> tell me a joke
+What ?
+> joke
+
+> tell me
+What ?
+> you know to tease?
+Yes .
+> then do it
+What ?
+> to tease
+I ' m going to see you .
+> good
+
+> iam waiting
+_UNK .
+> great to seee you
+I ' m going to see you .
+> whats your favourite movie?
+No .
+> you must talk to me
+I ' m going to see you .
+> do you love me?
+I ' m not sure .
+> can we go for a date?
+No .
+> why?
+I ' m going to see you .
+> ok may be after
+_UNK .
+> what do you like?
+I ' m going to see you .
+> answer me
+What ?
+> how about a party?
+I don ' t know .
+> why you dont know?
+I ' m going to see you .
+> yes or no
+
+> you cant answer me
+I ' m not going to you .
+> respond me
+I ' m going to see you .
+>  can't you?
+No .
+> i dont like you
+I ' m going to see you .
+> tell me a story
+What ?
+> story
+
+> forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9697794C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : train
+
+Preparing data in working_dir/
+2018-09-13 13:48:07.770143: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:48:07.775984: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:48:07.781660: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:48:07.787721: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:48:07.793611: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 13:48:07.799741: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+Creating 1 layers of 128 units.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-7500
+Reading development and training data (limit: 0).
+  reading data line 100000
+global step 7800 learning rate 0.5000 step-time 1.34 perplexity 19.90
+  eval: bucket 0 perplexity 833.09
+  eval: bucket 1 perplexity 788.22
+  eval: bucket 2 perplexity 907.82
+  eval: bucket 3 perplexity 851.51
+global step 8100 learning rate 0.5000 step-time 1.23 perplexity 18.77
+  eval: bucket 0 perplexity 403.58
+  eval: bucket 1 perplexity 806.38
+  eval: bucket 2 perplexity 790.82
+  eval: bucket 3 perplexity 948.77
+global step 8400 learning rate 0.5000 step-time 1.31 perplexity 18.90
+  eval: bucket 0 perplexity 467.12
+  eval: bucket 1 perplexity 1366.87
+  eval: bucket 2 perplexity 1023.04
+  eval: bucket 3 perplexity 969.78
+global step 8700 learning rate 0.5000 step-time 1.30 perplexity 18.88
+  eval: bucket 0 perplexity 459.42
+  eval: bucket 1 perplexity 1280.77
+  eval: bucket 2 perplexity 766.63
+  eval: bucket 3 perplexity 1013.03
+global step 9000 learning rate 0.5000 step-time 1.43 perplexity 18.96
+  eval: bucket 0 perplexity 217.32
+  eval: bucket 1 perplexity 814.76
+  eval: bucket 2 perplexity 1078.38
+  eval: bucket 3 perplexity 1037.19
+global step 9300 learning rate 0.4950 step-time 1.40 perplexity 18.78
+  eval: bucket 0 perplexity 509.80
+  eval: bucket 1 perplexity 995.24
+  eval: bucket 2 perplexity 1033.62
+  eval: bucket 3 perplexity 908.30
+global step 9600 learning rate 0.4950 step-time 1.37 perplexity 18.37
+  eval: bucket 0 perplexity 425.62
+  eval: bucket 1 perplexity 931.85
+  eval: bucket 2 perplexity 1077.93
+  eval: bucket 3 perplexity 1013.73
+global step 9900 learning rate 0.4950 step-time 1.22 perplexity 17.76
+  eval: bucket 0 perplexity 403.29
+  eval: bucket 1 perplexity 1664.32
+  eval: bucket 2 perplexity 1115.02
+  eval: bucket 3 perplexity 1108.31
+global step 10200 learning rate 0.4950 step-time 1.34 perplexity 18.15
+  eval: bucket 0 perplexity 338.17
+  eval: bucket 1 perplexity 1109.94
+  eval: bucket 2 perplexity 947.14
+  eval: bucket 3 perplexity 1283.98
+global step 10500 learning rate 0.4950 step-time 1.32 perplexity 17.69
+  eval: bucket 0 perplexity 812.19
+  eval: bucket 1 perplexity 1069.35
+  eval: bucket 2 perplexity 1043.66
+  eval: bucket 3 perplexity 1059.61
+global step 10800 learning rate 0.4950 step-time 1.45 perplexity 18.07
+  eval: bucket 0 perplexity 644.81
+  eval: bucket 1 perplexity 841.54
+  eval: bucket 2 perplexity 920.10
+  eval: bucket 3 perplexity 919.51
+global step 11100 learning rate 0.4950 step-time 1.35 perplexity 17.20
+  eval: bucket 0 perplexity 726.50
+  eval: bucket 1 perplexity 1275.02
+  eval: bucket 2 perplexity 1145.03
+  eval: bucket 3 perplexity 1366.98
+global step 11400 learning rate 0.4950 step-time 1.28 perplexity 16.65
+  eval: bucket 0 perplexity 638.68
+  eval: bucket 1 perplexity 892.87
+  eval: bucket 2 perplexity 815.41
+  eval: bucket 3 perplexity 1251.73
+global step 11700 learning rate 0.4950 step-time 1.35 perplexity 17.01
+  eval: bucket 0 perplexity 551.63
+  eval: bucket 1 perplexity 1435.82
+  eval: bucket 2 perplexity 1239.86
+  eval: bucket 3 perplexity 1184.27
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF95D7194C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-13 16:47:49.752058: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 16:47:49.758473: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 16:47:49.766603: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 16:47:49.776790: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 16:47:49.787331: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 16:47:49.796149: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-11700
+>
+
+> hi
+
+> where are you?
+I ' m not .
+> what?
+I ' m not .
+> you ok?
+Yeah .
+> what is yourname?
+_UNK .
+> do you have eyes?
+Yes .
+> you can see me then?
+No .
+> then why did you said it?
+I don ' t know .
+> you are sick
+I ' m not .
+> will you take me for a date
+I ' m not .
+> haha
+_UNK
+> cool
+
+> no problem
+I ' m not going to be .
+> i dont like you
+I ' m not .
+> reply me
+What ?
+> joke
+
+> tell me a joke
+What ?
+> do you know google deep mind?
+Yes .
+> tell me about it?
+Yeah .
+> tell me
+
+> iam waiting
+_UNK _UNK
+> you lost
+I ' m not .
+> then reply me
+What ?
+> do you know google deep mind?
+Yes .
+> what else do you know?
+I ' m not sure .
+> you should sure about what you know
+I ' m not sure .
+> no worries
+
+> switch to next question are you ready?
+I ' m not .
+> yes i know
+Yeah .
+> do you smile?
+Yeah .
+> you have legs
+No .
+> you have hands!?
+Yeah .
+> how many?
+_UNK .
+> how many hands do you have?
+I ' m not .
+> forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9698B94C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : train
+
+Preparing data in working_dir/
+2018-09-13 17:03:22.486167: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:03:22.491713: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:03:22.498224: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:03:22.503695: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:03:22.510362: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:03:22.518460: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+Creating 1 layers of 128 units.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-11700
+Reading development and training data (limit: 0).
+  reading data line 100000
+global step 12000 learning rate 0.4950 step-time 1.15 perplexity 16.59
+  eval: bucket 0 perplexity 737.77
+  eval: bucket 1 perplexity 1120.39
+  eval: bucket 2 perplexity 1496.52
+  eval: bucket 3 perplexity 1188.64
+global step 12300 learning rate 0.4950 step-time 1.16 perplexity 16.34
+  eval: bucket 0 perplexity 592.37
+  eval: bucket 1 perplexity 1120.50
+  eval: bucket 2 perplexity 1124.42
+  eval: bucket 3 perplexity 1189.74
+global step 12600 learning rate 0.4950 step-time 1.32 perplexity 16.81
+  eval: bucket 0 perplexity 600.13
+  eval: bucket 1 perplexity 965.21
+  eval: bucket 2 perplexity 1270.95
+  eval: bucket 3 perplexity 1035.45
+global step 12900 learning rate 0.4950 step-time 1.26 perplexity 16.35
+  eval: bucket 0 perplexity 803.61
+  eval: bucket 1 perplexity 903.11
+  eval: bucket 2 perplexity 1174.42
+  eval: bucket 3 perplexity 1099.50
+global step 13200 learning rate 0.4950 step-time 1.17 perplexity 16.25
+  eval: bucket 0 perplexity 503.41
+  eval: bucket 1 perplexity 738.66
+  eval: bucket 2 perplexity 1167.96
+  eval: bucket 3 perplexity 1209.83
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9699E94C4  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FF99AE67C23  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF99D4D8364  Unknown               Unknown  Unknown
+ntdll.dll          00007FF99E29E851  Unknown               Unknown  Unknown
+
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>
+(base) C:\wamp\www\tensorflow_chatbot>python execute.py
+
+>> Mode : test
+
+2018-09-13 17:48:41.593630: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:48:41.599790: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:48:41.605467: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:48:41.612647: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:48:41.618577: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-09-13 17:48:41.625639: W c:\tf_jenkins\home\workspace\release-win\m\windows\py\36\tensorflow\core\platform\cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+C:\Users\asojasingarayar\AppData\Local\Continuum\anaconda\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Reading model parameters from working_dir/seq2seq.ckpt-13200
+> hey
+
+> hu
+_UNK
+> you there
+I ' m sorry .
+> why
+
+> no worries
+I ' m sorry .
+> howw are you
+I ' m sorry .
+>

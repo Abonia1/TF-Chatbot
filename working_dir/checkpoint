@@ -1,0 +1,6 @@
+model_checkpoint_path: "seq2seq.ckpt-13200"
+all_model_checkpoint_paths: "seq2seq.ckpt-12000"
+all_model_checkpoint_paths: "seq2seq.ckpt-12300"
+all_model_checkpoint_paths: "seq2seq.ckpt-12600"
+all_model_checkpoint_paths: "seq2seq.ckpt-12900"
+all_model_checkpoint_paths: "seq2seq.ckpt-13200"
